@@ -1,41 +1,61 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # TradingTestWebsiteJustForWidget
 This is the website just for the testing purpose.
 =======
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+=======
+# Northstar Capital Trading Website
+>>>>>>> 0546a61 (Initial commit - Static Trading Website)
 
-## Getting Started
+A polished, static trading website built with Next.js, React, TypeScript, and Tailwind CSS. The project includes three pages: Home, About, and Contact, all designed with a professional blue trading theme and responsive layouts.
 
-First, run the development server:
+## Features
+
+- Responsive navigation with a mobile hamburger menu
+- Modern hero section and trading-focused content
+- Reusable UI components for cards, sections, and forms
+- Static market highlights and call-to-action sections
+- Accessible semantic HTML and keyboard-friendly navigation
+- SEO-friendly metadata for each page
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- ESLint
+
+## Installation
+
+```bash
+npm install
+```
+
+## Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
 ## Deploy on Vercel
 
+<<<<<<< HEAD
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 >>>>>>> e13e8d8 (Initial commit from Create Next App)
+=======
+1. Push the repository to GitHub.
+2. Import the project into Vercel.
+3. Deploy using the default Next.js settings.
+>>>>>>> 0546a61 (Initial commit - Static Trading Website)
