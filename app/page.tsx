@@ -7,7 +7,7 @@ import { Hero } from "./components/Hero";
 import { MarketCard } from "./components/MarketCard";
 import { Navbar } from "./components/Navbar";
 import { SectionHeading } from "./components/SectionHeading";
-import PlanifyWidget from "./components/WidgetComponent";
+import {PlanifyWidget,WidgetFullSizeComponent} from "./components/WidgetComponent";
 
 export const metadata: Metadata = {
   title: "Professional Trading Platform",
@@ -137,6 +137,9 @@ export default function HomePage() {
             />
             <div className="mt-10 min-h-100% min-w-100% flex justify-center">
               <PlanifyWidget />
+            </div>
+            <div className="mt-10 min-h-100% min-w-100% flex justify-center">
+              <WidgetFullSizeComponent />
             </div>
           </div>
         </section>
