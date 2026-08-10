@@ -7,6 +7,7 @@ import { Hero } from "./components/Hero";
 import { MarketCard } from "./components/MarketCard";
 import { Navbar } from "./components/Navbar";
 import { SectionHeading } from "./components/SectionHeading";
+import PlanifyWidget from "./components/WidgetComponent";
 
 export const metadata: Metadata = {
   title: "Professional Trading Platform",
@@ -125,6 +126,17 @@ export default function HomePage() {
             </div>
             <div className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4">
               <Image src="/market-chart.svg" alt="Trade growth chart illustration" width={640} height={480} className="w-full rounded-[1rem]" />
+            </div>
+          </div>
+
+          <div className="mx-auto mt-10 max-w-7xl">
+            <SectionHeading
+              eyebrow="Experience the difference"
+              title="Explore our platform with a free demo account"
+              description="Get a hands-on feel for our tools, insights, and execution framework with a risk-free demo account."
+            />
+            <div className="mt-10 min-h-100% min-w-100% flex justify-center">
+              <PlanifyWidget />
             </div>
           </div>
         </section>
