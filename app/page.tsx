@@ -138,9 +138,11 @@ export default function HomePage() {
             <div className="mt-10 min-h-100% min-w-100% flex justify-center">
               <PlanifyWidget />
             </div>
-            {/* <div className="mt-10 min-h-100% min-w-100% flex justify-center"> */}
-              <WidgetFullSizeComponent />
-            {/* </div> */}
+          {/* Testing TopGainer */}
+          <div className="mt-10 min-h-100% min-w-100% flex justify-center">
+            <p className="text-lg font-semibold text-slate-900">Testing TopGainer</p>
+              <PlanifyWidget />
+            </div>
           </div>
         </section>
 
