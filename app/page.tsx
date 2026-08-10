@@ -138,9 +138,9 @@ export default function HomePage() {
             <div className="mt-10 min-h-100% min-w-100% flex justify-center">
               <PlanifyWidget />
             </div>
-            <div className="mt-10 min-h-100% min-w-100% flex justify-center">
+            {/* <div className="mt-10 min-h-100% min-w-100% flex justify-center"> */}
               <WidgetFullSizeComponent />
-            </div>
+            {/* </div> */}
           </div>
         </section>
 
