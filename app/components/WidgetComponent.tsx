@@ -80,7 +80,7 @@
         
    
 
-    const PlanifyWidgetTest = () => {
+  export const PlanifyWidgetTest = () => {
           useEffect(() => {
             const widgetId = '5bb2dedc-7f63-471e-8ba3-720dce6ecd62';
             const currentDomain = window.location.hostname;

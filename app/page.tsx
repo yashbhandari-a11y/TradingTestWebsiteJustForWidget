@@ -7,7 +7,7 @@ import { Hero } from "./components/Hero";
 import { MarketCard } from "./components/MarketCard";
 import { Navbar } from "./components/Navbar";
 import { SectionHeading } from "./components/SectionHeading";
-import {PlanifyWidget,WidgetFullSizeComponent} from "./components/WidgetComponent";
+import {PlanifyWidget,WidgetFullSizeComponent, PlanifyWidgetTest} from "./components/WidgetComponent";
 
 export const metadata: Metadata = {
   title: "Professional Trading Platform",
@@ -141,7 +141,7 @@ export default function HomePage() {
           {/* Testing TopGainer */}
           <div className="mt-10 min-h-100% min-w-100% flex justify-center">
             <p className="text-lg font-semibold text-slate-900">Testing TopGainer</p>
-              <PlanifyWidget />
+              <PlanifyWidgetTest />
             </div>
           </div>
         </section>
