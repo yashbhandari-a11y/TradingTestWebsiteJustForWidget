@@ -7,7 +7,8 @@ import { Hero } from "./components/Hero";
 import { MarketCard } from "./components/MarketCard";
 import { Navbar } from "./components/Navbar";
 import { SectionHeading } from "./components/SectionHeading";
-import {PlanifyWidget,WidgetFullSizeComponent, PlanifyWidgetTest} from "./components/WidgetComponent";
+import { PlanifyWidget, WidgetFullSizeComponent, PlanifyWidgetTest } from "./components/WidgetComponent";
+import { getTopLosers } from "./lib/fetching";
 
 export const metadata: Metadata = {
   title: "Professional Trading Platform",
@@ -65,7 +66,10 @@ const reasons = [
   "Premium client support with clear communication and transparent guidance.",
 ];
 
-export default function HomePage() {
+export default async function HomePage() {
+
+  const topLosers = await getTopLosers();
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <Navbar />
@@ -138,9 +142,12 @@ export default function HomePage() {
             <div className="mt-10 min-h-100% min-w-100% flex justify-center">
               <PlanifyWidget />
             </div>
-          {/* Testing TopGainer */}
-          <div className="mt-10 min-h-100% min-w-100% flex justify-center">
-            <p className="text-lg font-semibold text-slate-900">Testing TopGainer</p>
+            {/* Testing TopGainer */}
+            <div className="mt-10 min-h-100% min-w-100% flex justify-center">
+              <p className="text-lg font-semibold text-slate-900">Testing TopGainer</p>
+              <pre className="mt-4 overflow-auto rounded-lg bg-slate-900 p-4 text-sm text-white">
+                {JSON.stringify(topLosers, null, 2)}
+              </pre>
               <PlanifyWidgetTest />
             </div>
           </div>
