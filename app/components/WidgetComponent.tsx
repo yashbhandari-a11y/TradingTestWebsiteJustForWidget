@@ -171,3 +171,136 @@
           );
         };
         
+       // detailed Top Gainers Widget
+       export const DetailedTopGainers = () => {
+          useEffect(() => {
+            const widgetId = '5376de45-b7ca-45c5-bbd7-6dc2d48ca291';
+            const currentDomain = window.location.hostname;
+            const currentPath = window.location.pathname;
+            const iframe = document.getElementById('planify-widget')as HTMLIFrameElement | null;
+            if (iframe) {
+              iframe.src = 'https://www.planify.in/widgets/' + widgetId + '?d=' + currentDomain + '&p=' + currentPath;
+            }
+          }, []);
+        
+          return (
+            <div style={{ position: 'relative', top: 0, zIndex: 20, width: '100%', minWidth: '1118px', height: '614px' }}>
+              <iframe
+                id="planify-widget"
+                width="100%"
+                height="614px"
+                frameBorder="0"
+                title="planify tickers"
+              ></iframe>
+              <a
+                id="referral-link"
+                href="https://www.planify.in/"
+                style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0, overflow: 'hidden' }}
+                rel="nofollow"
+              >
+                Planify
+              </a>
+            </div>
+          );
+        };
+       // detailed Top Losers Widget
+        export const DetailedTopLosers = () => {
+          useEffect(() => {
+            const widgetId = '5376de45-b7ca-45c5-bbd7-6dc2d48ca291';
+            const currentDomain = window.location.hostname;
+            const currentPath = window.location.pathname;
+            const iframe = document.getElementById('planify-widget')as HTMLIFrameElement | null;
+            if (iframe) {
+              iframe.src = 'https://www.planify.in/widgets/' + widgetId + '?d=' + currentDomain + '&p=' + currentPath;;
+            }
+          }, []);
+        
+          return (
+            <div style={{ position: 'relative', top: 0, zIndex: 20, width: '100%', minWidth: '1118px', height: '614px' }}>
+              <iframe
+                id="planify-widget"
+                width="100%"
+                height="614px"
+                frameBorder="0"
+                title="planify tickers"
+              ></iframe>
+              <a
+                id="referral-link"
+                href="https://www.planify.in/"
+                style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0, overflow: 'hidden' }}
+                rel="nofollow"
+              >
+                Planify
+              </a>
+            </div>
+          );
+        };
+        
+       // detailed Most Active volume Widget
+
+        export const DetailedMostActiveVolume = () => {
+          useEffect(() => {
+            const widgetId = '5376de45-b7ca-45c5-bbd7-6dc2d48ca291';
+            const currentDomain = window.location.hostname;
+            const currentPath = window.location.pathname;
+            const iframe = document.getElementById('planify-widget') as HTMLIFrameElement | null;
+            if (iframe) {
+              iframe.src = 'https://www.planify.in/widgets/' + widgetId + '?d=' + currentDomain + '&p=' + currentPath;;
+            }
+          }, []);
+        
+          return (
+            <div style={{ position: 'relative', top: 0, zIndex: 20, width: '100%', minWidth: '1118px', height: '614px' }}>
+              <iframe
+                id="planify-widget"
+                width="100%"
+                height="614px"
+                frameBorder="0"
+                title="planify tickers"
+              ></iframe>
+              <a
+                id="referral-link"
+                href="https://www.planify.in/"
+                style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0, overflow: 'hidden' }}
+                rel="nofollow"
+              >
+                Planify
+              </a>
+            </div>
+          );
+        };
+
+       // detailed Most Active Value Widget
+       
+        export const DetailedMostActiveValue = () => {
+          useEffect(() => {
+            const widgetId = '5376de45-b7ca-45c5-bbd7-6dc2d48ca291';
+            const currentDomain = window.location.hostname;
+            const currentPath = window.location.pathname;
+            const iframe = document.getElementById('planify-widget') as HTMLIFrameElement | null;
+            if (iframe) {
+              iframe.src = 'https://www.planify.in/widgets/' + widgetId + '?d=' + currentDomain + '&p=' + currentPath;;
+            }
+          }, []);
+        
+          return (
+            <div style={{ position: 'relative', top: 0, zIndex: 20, width: '100%', minWidth: '1118px', height: '614px' }}>
+              <iframe
+                id="planify-widget"
+                width="100%"
+                height="614px"
+                frameBorder="0"
+                title="planify tickers"
+              ></iframe>
+              <a
+                id="referral-link"
+                href="https://www.planify.in/"
+                style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0, overflow: 'hidden' }}
+                rel="nofollow"
+              >
+                Planify
+              </a>
+            </div>
+          );
+        };
+        

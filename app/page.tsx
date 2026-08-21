@@ -7,7 +7,7 @@ import { Hero } from "./components/Hero";
 import { MarketCard } from "./components/MarketCard";
 import { Navbar } from "./components/Navbar";
 import { SectionHeading } from "./components/SectionHeading";
-import { MostActiveVolumeTest, TopGainersTest, MostActiveValueTest, TopLosersTest } from "./components/WidgetComponent";
+import { MostActiveVolumeTest, TopGainersTest, MostActiveValueTest, TopLosersTest, DetailedTopLosers,DetailedTopGainers, DetailedMostActiveVolume, DetailedMostActiveValue } from "./components/WidgetComponent";
 import { getTopLosers } from "./lib/fetching";
 
 export const metadata: Metadata = {
@@ -135,24 +135,44 @@ export default async function HomePage() {
 
         </section>
 
-        <h2>Testing Top Gainers</h2><br />
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Gainers</b></h2><br />
          <section className="px-4 py-20 sm:px-6 lg:px-8">
           <TopGainersTest />
         </section>
         <br /><br />
-        <h2>Testing Top Losers</h2><br />
-         <section className="px-4 py-20 sm:px-6 lg:px-8">
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Losers</b></h2><br />
+         <section className="px-4 py-20 sm:px-6 lg:px-8 flex-col justify-center items-center">
           <TopLosersTest />
         </section>
         <br /><br />
-        <h2>Testing Most Active Value</h2><br />
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Most Active Value</b></h2><br />
          <section className="px-4 py-20 sm:px-6 lg:px-8">
           <MostActiveValueTest />
         </section>
         <br /><br />
-        <h2>Testing Most Active Volume</h2><br />
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Most Active Volume</b></h2><br />
          <section className="px-4 py-20 sm:px-6 lg:px-8">
           <MostActiveVolumeTest />
+        </section>
+        <br /><br />
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing DetailedTop Gainers</b></h2><br />
+         <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <DetailedTopGainers />
+        </section>
+        <br /><br />
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Detailed Top Losers</b></h2><br />
+         <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <DetailedTopLosers />
+        </section>
+        <br /><br />
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Detailed Most Active Value</b></h2><br />
+         <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <DetailedMostActiveValue />
+        </section>
+        <br /><br />
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Detailed Most Active Volume</b></h2><br />
+         <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <DetailedMostActiveVolume />
         </section>
         <br /><br />
 
