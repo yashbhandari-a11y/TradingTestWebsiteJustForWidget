@@ -9,10 +9,10 @@
             const currentPath = window.location.pathname;
             const iframe = document.getElementById('planify-widget')as HTMLIFrameElement | null;
             if (iframe) {
-              iframe.src = 'https://www.planify.in/widgets/' + widgetId + '?d=' + currentDomain + '&p=' + currentPath;;
+              iframe.src = 'https://www.bold-test.planify.in/widgets/' + widgetId + '?d=' + currentDomain + '&p=' + currentPath;;
             }
-          }, []);
-        
+          }, []);   // I have manually changed the Src, on testing the widget iframe links contains the like of planify.in, so I have manually changed the src to bold-test.planify.in
+                    // Still it is not working, no widget is visible to me.
           return (
             <div
               style={{
@@ -34,7 +34,7 @@
               ></iframe>
               <a
                 id="referral-link"
-                href="https://www.planify.in/"
+                href="https://www.bold-test.planify.in/"
                 style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0, overflow: 'hidden' }}
                 rel="nofollow"
               >
