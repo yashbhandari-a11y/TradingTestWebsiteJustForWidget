@@ -7,7 +7,7 @@ import { Hero } from "./components/Hero";
 import { MarketCard } from "./components/MarketCard";
 import { Navbar } from "./components/Navbar";
 import { SectionHeading } from "./components/SectionHeading";
-import { PlanifyWidget, WidgetFullSizeComponent, PlanifyWidgetTest } from "./components/WidgetComponent";
+import { MostActiveVolumeTest, TopGainersTest, MostActiveValueTest, TopLosersTest } from "./components/WidgetComponent";
 import { getTopLosers } from "./lib/fetching";
 
 export const metadata: Metadata = {
@@ -133,25 +133,28 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <div className="mx-auto mt-10 max-w-7xl">
-            <SectionHeading
-              eyebrow="Experience the difference"
-              title="Explore our platform with a free demo account"
-              description="Get a hands-on feel for our tools, insights, and execution framework with a risk-free demo account."
-            />
-            <div className="mt-10 min-h-100% min-w-100% flex justify-center">
-              <PlanifyWidget />
-            </div>
-            {/* Testing TopGainer */}
-            <div className="mt-10 min-h-100% min-w-100% flex justify-center">
-              <p className="text-lg font-semibold text-slate-900">Testing TopGainer</p>
-              <pre className="mt-4 overflow-auto rounded-lg bg-slate-900 p-4 text-sm text-white">
-                {JSON.stringify(topLosers, null, 2)}
-              </pre>
-              <PlanifyWidgetTest />
-            </div>
-          </div>
         </section>
+
+        <h2>Testing Top Gainers</h2><br />
+         <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <TopGainersTest />
+        </section>
+        <br /><br />
+        <h2>Testing Top Losers</h2><br />
+         <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <TopLosersTest />
+        </section>
+        <br /><br />
+        <h2>Testing Most Active Value</h2><br />
+         <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <MostActiveValueTest />
+        </section>
+        <br /><br />
+        <h2>Testing Most Active Volume</h2><br />
+         <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <MostActiveVolumeTest />
+        </section>
+        <br /><br />
 
         <CTASection />
       </main>
