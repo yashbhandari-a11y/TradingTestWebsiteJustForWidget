@@ -176,6 +176,27 @@ export default async function HomePage() {
         </section>
         <br /><br />
 
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>API whitelisting testing</b></h2><br />
+         <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl">
+            {Array.isArray((topLosers as any)?.data ?? topLosers) ? (
+              <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                {(((topLosers as any).data ?? topLosers) as any[]).map((item, i) => (
+                  <div key={i} className="rounded-lg border p-4 bg-white">
+                    <div className="flex justify-between items-center">
+                      <div className="font-medium text-slate-900">{item.symbol ?? item.ticker ?? item.name ?? item[0]}</div>
+                      <div className="text-sm text-slate-600">{item.change_percent ?? item.change ?? item.changePercent ?? ''}</div>
+                    </div>
+                    <div className="text-sm text-slate-700 mt-2">{item.last_price ?? item.price ?? item.last ?? ''}</div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <pre className="whitespace-pre-wrap text-sm text-slate-600">{JSON.stringify(topLosers, null, 2)}</pre>
+            )}
+          </div>
+        </section>
+
         <CTASection />
       </main>
       <Footer />
