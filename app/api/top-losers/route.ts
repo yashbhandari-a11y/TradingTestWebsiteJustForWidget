@@ -8,7 +8,6 @@ export async function GET() {
     path: '/',
     client_id: 'e268628d-068c-48ed-a83f-235c6fc75a8e',
   });
-
   try {
     const response = await fetch(
       `https://marketing.planify.in/widgets/getWidgets/top-losers?${params.toString()}`,

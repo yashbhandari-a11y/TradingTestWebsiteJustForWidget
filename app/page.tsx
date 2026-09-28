@@ -148,7 +148,7 @@ export default async function HomePage() {
         <br /><br />
         <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Most Active Value</b></h2><br />
          <section className="px-4 py-20 sm:px-6 lg:px-8">
-          {/* <MostActiveValueTest /> */}
+          <MostActiveValueTest />
         </section>
         <br /><br />
         <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Most Active Volume</b></h2><br />
