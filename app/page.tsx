@@ -10,6 +10,7 @@ import { SectionHeading } from "./components/SectionHeading";
 import { MostActiveVolumeTest, TopGainersTest, MostActiveValueTest, TopLosersTest, DetailedTopLosers,DetailedTopGainers, DetailedMostActiveVolume, DetailedMostActiveValue } from "./components/WidgetComponent";
 import ClientTopLosers from "./components/ClientTopLosers";
 import { getTopLosers } from "./lib/fetching";
+import ClientAPICall from "./components/ClientAPICall";
 
 export const metadata: Metadata = {
   title: "Professional Trading Platform",
@@ -136,7 +137,8 @@ export default async function HomePage() {
 
         </section>
 
-        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Gainers</b></h2><br />
+   {/* Testing Sections */}
+        {/* <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Gainers</b></h2><br />
          <section className="px-4 py-20 sm:px-6 lg:px-8">
           <TopGainersTest />
         </section>
@@ -174,7 +176,7 @@ export default async function HomePage() {
         <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Detailed Most Active Volume</b></h2><br />
          <section className="px-4 py-20 sm:px-6 lg:px-8">
           <DetailedMostActiveVolume />
-        </section>
+        </section> */}
         <br /><br />
 
  {/* Server-Side */}
@@ -188,7 +190,7 @@ export default async function HomePage() {
  {/* Client-Side */}
 <h2 className="text-2xl font-bold text-gray-900 text-center"><b>API whitelisting testing Client-Side</b></h2><br />
          <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <ClientTopLosers />
+          <ClientAPICall />
         </section>
         <CTASection />
       </main>
