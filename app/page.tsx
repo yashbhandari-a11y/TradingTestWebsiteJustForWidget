@@ -138,7 +138,7 @@ export default async function HomePage() {
         </section>
 
    {/* Testing Sections */}
-        {/* <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Gainers</b></h2><br />
+  <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Gainers</b></h2><br />
          <section className="px-4 py-20 sm:px-6 lg:px-8">
           <TopGainersTest />
         </section>
@@ -176,7 +176,7 @@ export default async function HomePage() {
         <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Detailed Most Active Volume</b></h2><br />
          <section className="px-4 py-20 sm:px-6 lg:px-8">
           <DetailedMostActiveVolume />
-        </section> */}
+        </section>
         <br /><br />
 
  {/* Server-Side */}
