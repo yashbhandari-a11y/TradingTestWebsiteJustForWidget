@@ -283,7 +283,7 @@ export const DetailedTopLosers = () => {
 };
 // detailed Most Active volume Widget ==> Updated by the Satyam Pal
 
-export const PDetailedMostActiveVolume = () => {
+export const DetailedMostActiveVolume = () => {
   const [src, setSrc] = useState('https://bolt-test.planify.in/widgets/380257fb-db11-46d2-84be-0ee373a78dc0');
 
   useEffect(() => {
