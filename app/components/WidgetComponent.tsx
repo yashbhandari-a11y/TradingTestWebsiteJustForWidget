@@ -281,16 +281,16 @@ export const DetailedTopLosers = () => {
     </div>
   );
 };
-
 // detailed Most Active volume Widget ==> Updated by the Satyam Pal
-export const DetailedMostActiveVolume = () => {
-  const [src, setSrc] = useState('https://bolt-test.planify.in/widgets/1b8c6446-82ea-4ba8-a93a-45bf6a1e870f');
+
+export const PDetailedMostActiveVolume = () => {
+  const [src, setSrc] = useState('https://bolt-test.planify.in/widgets/380257fb-db11-46d2-84be-0ee373a78dc0');
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const currentDomain = window.location.hostname;
       const currentPath = window.location.pathname;
-      setSrc('https://bolt-test.planify.in/widgets/1b8c6446-82ea-4ba8-a93a-45bf6a1e870f?d=' + encodeURIComponent(currentDomain) + '&p=' + encodeURIComponent(currentPath));
+      setSrc('https://bolt-test.planify.in/widgets/380257fb-db11-46d2-84be-0ee373a78dc0?d=' + encodeURIComponent(currentDomain) + '&p=' + encodeURIComponent(currentPath));
     }
   }, []);
 
