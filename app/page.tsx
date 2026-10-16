@@ -7,7 +7,7 @@ import { Hero } from "./components/Hero";
 import { MarketCard } from "./components/MarketCard";
 import { Navbar } from "./components/Navbar";
 import { SectionHeading } from "./components/SectionHeading";
-import { MostActiveVolumeTest, TopGainersTest, MostActiveValueTest, TopLosersTest, DetailedTopLosers,DetailedTopGainers, DetailedMostActiveVolume, DetailedMostActiveValue } from "./components/WidgetComponent";
+import { MostActiveVolumeTest, TopGainersTest, MostActiveValueTest, TopLosersTest, DetailedWidget } from "./components/WidgetComponent";
 import ClientTopLosers from "./components/ClientTopLosers";
 import { getTopLosers } from "./lib/fetching";
 import ClientAPICall from "./components/ClientAPICall";
@@ -138,7 +138,7 @@ export default async function HomePage() {
         </section>
 
    {/* Testing Sections */}
-  {/* <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Gainers</b></h2><br />
+ <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Gainers</b></h2><br />
           <section className="px-4 py-20 sm:px-6 lg:px-8">
           <TopGainersTest />
         </section>
@@ -158,24 +158,9 @@ export default async function HomePage() {
           <MostActiveVolumeTest />
         </section>
         <br /><br />
-        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing DetailedTop Gainers</b></h2><br />
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Detailed Widgets</b></h2><br />
          <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <DetailedTopGainers />
-        </section>
-        <br /><br />
-        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Detailed Top Losers</b></h2><br />
-         <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <DetailedTopLosers />
-        </section>
-        <br /><br />
-        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Detailed Most Active Value</b></h2><br />
-         <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <DetailedMostActiveValue />
-        </section>
-        <br /><br /> */}
-        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Detailed Most Active Volume</b></h2><br />
-         <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <DetailedMostActiveVolume />
+          <DetailedWidget />
         </section>
         <br /><br />
 
