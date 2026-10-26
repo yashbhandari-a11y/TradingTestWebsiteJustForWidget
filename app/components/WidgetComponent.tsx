@@ -92,7 +92,7 @@ export const TopLosersTest = () => {
   );
 };
 
-// Top Losers Widget for testing to checek
+// Top Losers Widget for staging
 export const TestingLoserWidgets = () => {
   const [src, setSrc] = useState('https://bolt-test.planify.in/widgets/b1e77a13-8330-490b-a52d-d2edd896fde8');
 
@@ -134,6 +134,51 @@ export const TestingLoserWidgets = () => {
     </div>
   );
 };
+
+// Top Most active value for testing to checek only testing bolt test
+export const MostActiveValueWidgetTest = () => {
+  const [src, setSrc] = useState('');
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const currentDomain = window.location.hostname;
+      const currentPath = window.location.pathname;
+      setSrc('https://testing.planify.in/widgets/a11856cc-766c-49b0-8e18-99980eb531a4?d=' + encodeURIComponent(currentDomain) + '&p=' + encodeURIComponent(currentPath));
+    }
+  }, []);
+
+  if (!src) return null;
+
+  return (
+    <div
+      style={{
+        position: 'relative',
+        top: '0',
+        zIndex: '20',
+        height: '445px',
+        width: '330px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <iframe
+        src={src}
+        width="100%"
+        height="400px"
+        frameBorder="0"
+        title="planify tickers"
+      ></iframe>
+      <a
+        href="https://testing.planify.in/"
+        style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0, overflow: 'hidden' }}
+        rel="nofollow"
+      >
+        Planify
+      </a>
+    </div>
+  );
+};
+
 
 // Most Active Widget  ==> Updated after changes done by satyam.
 export const MostActiveValueTest = () => {

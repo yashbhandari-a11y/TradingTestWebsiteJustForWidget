@@ -7,10 +7,7 @@ import { Hero } from "./components/Hero";
 import { MarketCard } from "./components/MarketCard";
 import { Navbar } from "./components/Navbar";
 import { SectionHeading } from "./components/SectionHeading";
-import { MostActiveVolumeTest, TopGainersTest, MostActiveValueTest, TopLosersTest, DetailedWidget,TestingLoserWidgets } from "./components/WidgetComponent";
-import ClientTopLosers from "./components/ClientTopLosers";
-import { getTopLosers } from "./lib/fetching";
-import ClientAPICall from "./components/ClientAPICall";
+import { MostActiveValueWidgetTest } from "./components/WidgetComponent";
 
 export const metadata: Metadata = {
   title: "Professional Trading Platform",
@@ -68,10 +65,7 @@ const reasons = [
   "Premium client support with clear communication and transparent guidance.",
 ];
 
-export default async function HomePage() {
-
-  const topLosers = await getTopLosers();
-
+export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <Navbar />
@@ -137,51 +131,9 @@ export default async function HomePage() {
 
         </section>
 
-   {/* Testing Sections */}
- <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Gainers</b></h2><br />
-          <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <TopGainersTest />
-        </section>
-        <br /><br />
-        {/* One testing Widget is added toh check the functionality of the widget and the API whitelisting is working or not */}
-      <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Losers</b></h2><br />
-        <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <TestingLoserWidgets/>
-        </section>
-        <br /><br />
-        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Losers</b></h2><br />
-         <section className="px-4 py-20 sm:px-6 lg:px-8 flex-col justify-center items-center">
-          <TopLosersTest />
-        </section>
-        <br /><br />
-        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Most Active Value</b></h2><br />
-         <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <MostActiveValueTest />
-        </section>
-        <br /><br />
-        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Most Active Volume</b></h2><br />
-         <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <MostActiveVolumeTest />
-        </section>
-        <br /><br />
-        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Detailed Widgets</b></h2><br />
-         <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <DetailedWidget />
-        </section>
-        <br /><br />
-
- {/* Server-Side */}
-        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>API whitelisting testing Server-Side</b></h2><br />
-         <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
-            <pre className="whitespace-pre-wrap text-sm text-slate-600">{JSON.stringify(topLosers, null, 2)}</pre>
-          </div>
-        </section>
-
- {/* Client-Side */}
-<h2 className="text-2xl font-bold text-gray-900 text-center"><b>API whitelisting testing Client-Side</b></h2><br />
-         <section className="px-4 py-20 sm:px-6 lg:px-8">
-          <ClientAPICall />
+        <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Most Active Volume Testing</b></h2>
+        <section className="flex justify-center px-4 py-20 sm:px-6 lg:px-8"> 
+          <MostActiveValueWidgetTest />
         </section>
         <CTASection />
       </main>
