@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 
 // Replaced the widget with the staging Widgets
-
+// Currentluy staging
 export const TopGainersTest = () => {
   const [src, setSrc] = useState('');
 
@@ -10,7 +10,7 @@ export const TopGainersTest = () => {
     if (typeof window !== 'undefined') {
       const currentDomain = window.location.hostname;
       const currentPath = window.location.pathname;
-      setSrc('https://staging.planify.in/widgets/14c20571-c860-47f2-8bd4-8b94944cbda5?d=' + encodeURIComponent(currentDomain) + '&p=' + encodeURIComponent(currentPath));
+      setSrc('https://bolt-stag.planify.in/widgets/14c20571-c860-47f2-8bd4-8b94944cbda5/?d=' + encodeURIComponent(currentDomain) + '&p=' + encodeURIComponent(currentPath));
     }
   }, []);
 
@@ -37,7 +37,7 @@ export const TopGainersTest = () => {
         title="planify tickers"
       ></iframe>
       <a
-        href="https://staging.planify.in/"
+        href="https://bolt-stag.planify.in/"
         style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0, overflow: 'hidden' }}
         rel="nofollow"
       >

@@ -7,7 +7,7 @@ import { Hero } from "./components/Hero";
 import { MarketCard } from "./components/MarketCard";
 import { Navbar } from "./components/Navbar";
 import { SectionHeading } from "./components/SectionHeading";
-import { MostActiveValueWidgetTest } from "./components/WidgetComponent";
+import { MostActiveValueWidgetTest, TopGainersTest } from "./components/WidgetComponent";
 
 export const metadata: Metadata = {
   title: "Professional Trading Platform",
@@ -133,7 +133,7 @@ export default function HomePage() {
 
         <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Most Active Volume Testing</b></h2>
         <section className="flex justify-center px-4 py-20 sm:px-6 lg:px-8"> 
-          <MostActiveValueWidgetTest />
+          <TopGainersTest />
         </section>
         <CTASection />
       </main>
