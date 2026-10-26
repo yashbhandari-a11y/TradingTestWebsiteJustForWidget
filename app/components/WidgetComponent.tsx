@@ -92,6 +92,48 @@ export const TopLosersTest = () => {
   );
 };
 
+// Top Losers Widget for testing to checek
+export const TestingLoserWidgets = () => {
+  const [src, setSrc] = useState('https://bolt-test.planify.in/widgets/b1e77a13-8330-490b-a52d-d2edd896fde8');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const currentDomain = window.location.hostname;
+      const currentPath = window.location.pathname;
+      setSrc('https://bolt-test.planify.in/widgets/b1e77a13-8330-490b-a52d-d2edd896fde8?d=' + encodeURIComponent(currentDomain) + '&p=' + encodeURIComponent(currentPath));
+    }
+  }, []);
+
+  return (
+    <div
+      style={{
+        position: 'relative',
+        top: '0',
+        zIndex: '20',
+        height: '445px',
+        width: '330px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <iframe
+        src={src}
+        width="100%"
+        height="400px"
+        frameBorder="0"
+        title="planify tickers"
+      ></iframe>
+      <a
+        href="https://bolt-test.planify.in/"
+        style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0, overflow: 'hidden' }}
+        rel="nofollow"
+      >
+        Planify
+      </a>
+    </div>
+  );
+};
 
 // Most Active Widget  ==> Updated after changes done by satyam.
 export const MostActiveValueTest = () => {

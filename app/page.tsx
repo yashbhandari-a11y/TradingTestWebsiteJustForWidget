@@ -7,7 +7,7 @@ import { Hero } from "./components/Hero";
 import { MarketCard } from "./components/MarketCard";
 import { Navbar } from "./components/Navbar";
 import { SectionHeading } from "./components/SectionHeading";
-import { MostActiveVolumeTest, TopGainersTest, MostActiveValueTest, TopLosersTest, DetailedWidget } from "./components/WidgetComponent";
+import { MostActiveVolumeTest, TopGainersTest, MostActiveValueTest, TopLosersTest, DetailedWidget,TestingLoserWidgets } from "./components/WidgetComponent";
 import ClientTopLosers from "./components/ClientTopLosers";
 import { getTopLosers } from "./lib/fetching";
 import ClientAPICall from "./components/ClientAPICall";
@@ -141,6 +141,12 @@ export default async function HomePage() {
  <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Gainers</b></h2><br />
           <section className="px-4 py-20 sm:px-6 lg:px-8">
           <TopGainersTest />
+        </section>
+        <br /><br />
+        {/* One testing Widget is added toh check the functionality of the widget and the API whitelisting is working or not */}
+      <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Losers</b></h2><br />
+        <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <TestingLoserWidgets/>
         </section>
         <br /><br />
         <h2 className="text-2xl font-bold text-gray-900 text-center"><b>Testing Top Losers</b></h2><br />
